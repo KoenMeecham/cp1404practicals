@@ -4,9 +4,9 @@ MENU = """(G)et a valid score (must be 0-100 inclusive)
 (S)how stars 
 (Q)uit"""
 
-def main(grade=None):
+def main():
     """Enter score and check that it is valid"""
-    validate_grade()
+    grade = validate_grade()
     print(MENU)
     choice = input(">>> ").upper()
     while choice != "Q":
@@ -25,11 +25,11 @@ def main(grade=None):
 def validate_grade():
     """Check if grade is valid"""
     grade = float(input("Enter grade: "))
-    if grade < 0 or grade > 100:
+    while grade < 0 or grade > 100:
         print("Invalid score. Must be between 0 and 100.")
-    else:
-        print("Grade is valid")
-        return grade
+        grade = float(input("Enter grade: "))
+    print("Grade is valid")
+    return grade
 
 def get_result(grade):
     """Calculate grade score"""
