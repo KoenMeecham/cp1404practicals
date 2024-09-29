@@ -1,8 +1,3 @@
-"""
-CP1404/CP5632 - Practical
-Broken program to determine score status
-"""
-
 
 def main():
     """Enter score and run score calculation function"""
