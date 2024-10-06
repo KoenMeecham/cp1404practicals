@@ -1,5 +1,4 @@
 #Create or write name in name.txt
-
 FILENAME = "name.txt"
 out_file = open(FILENAME, 'w')
 user_name = input("What is your name ")
