@@ -1,7 +1,10 @@
 numbers = []
-for i in range(5):
-    number = int(input("Number: "))
+count = 1
+number = int(input(f"Number {count}: "))
+while number > 0:
     numbers.append(number)
+    count = count + 1
+    number = int(input(f"Number {count}: "))
 
 print("The first number is", numbers[0])
 print("The last number is", numbers[-1])
