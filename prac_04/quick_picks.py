@@ -17,7 +17,7 @@ def main():
         #Create line of quick picks
         quick_pick = []
         for j in range(NUMBERS_PER_LINE):
-            #Generate each random number, if a new number is the same as a old number
+            #Generate each random number, if a new number is the same as an old number
             #Generate a new random number
             number = random.randint(MINIMUM, MAXIMUM)
             while number in quick_pick:
