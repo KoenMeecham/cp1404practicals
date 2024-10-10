@@ -16,6 +16,7 @@ def main():
     print_report(incomes)
 
 def print_report(incomes):
+    """Display income report for incomes and total income over a given number of months."""
     print("\nIncome Report\n-------------")
     total = 0
     for month, income in enumerate(incomes, 1):
