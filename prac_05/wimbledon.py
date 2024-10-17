@@ -1,4 +1,4 @@
-"""Wimbledon Program"""
+"""Wimbledon"""
 """
 Expected = 30 mins
 Actual = 32 mins
