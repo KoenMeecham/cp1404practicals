@@ -1,7 +1,7 @@
 """Hex decimal converter"""
 """
 Expected = 15 mins
-Actual = 16 mins
+Actual = 14 mins
 """
 COLOUR_CODES = {"aliceblue": "#f0f8ff", "antiquewhite": "#faebd7",
                 "antiquewhite1": "#ffefdb", "antiquewhite2": "#eedfcc",
