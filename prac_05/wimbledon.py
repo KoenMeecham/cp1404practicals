@@ -1,7 +1,7 @@
 """Wimbledon Question"""
 """
 Expected = 30 mins
-Actual = 
+Actual = 32 mins
 """
 filename = "wimbledon.csv"
 INDEX_COUNTRY = 1
@@ -13,6 +13,7 @@ def main():
     display_results(champion_to_count, countries)
 
 def retrieve_records(filename):
+    #retrieve the data records
     records = []
     with open(filename, "r", encoding="utf-8-sig") as in_file:
         in_file.readline()  # Remove header
@@ -22,6 +23,7 @@ def retrieve_records(filename):
     return records
 
 def process_records(records):
+    #Put teh records into a set and dictonary
     champion_to_count = {}
     countries = set()
     for record in records:
@@ -33,6 +35,7 @@ def process_records(records):
     return champion_to_count, countries
 
 def display_results(champion_to_count, countries):
+    #Display the winner and countries who won
     print("Wimbledon Champions: ")
     for name, count in champion_to_count.items():
         print(name, count)
