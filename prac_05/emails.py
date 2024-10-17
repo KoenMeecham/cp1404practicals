@@ -1,7 +1,7 @@
 """Emails Question"""
 """
 Expected = 20 mins 
-Actual = 25mins
+Actual = 25 mins
 """
 
 def main():
