@@ -8,7 +8,7 @@ CURRENT_YEAR = 2024
 VINTAGE_AGE = 50
 class Guitar:
     """Represents a guitar object"""
-    def __init__(self, name, year, cost):
+    def __init__(self, name="", year=0, cost=0):
         """Construct a guitar instance"""
         self.name = name
         self.year = year
