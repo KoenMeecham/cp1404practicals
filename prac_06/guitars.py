@@ -16,12 +16,12 @@ def main():
     while name != "":
         year = int(input("Year: "))
         cost = float(input("Cost: "))
-        guitar_to_add = Guitar(name, year, cost)
-        guitars.append(guitar_to_add)
+        add_guitar = Guitar(name, year, cost)
+        guitars.append(add_guitar)
         name = input("Name: ")
 
     guitars.append(Guitar("Gibson L-5 CES", 1922, 16035.40))
-    guitars.append(Guitar("Line 6 JTV-59", 2010, 1512.9))
+    guitars.append(Guitar("Amazing guitar", 2020, 20000))
     #Call is_vintage function
     if guitars != "":
         print("My guitars!")

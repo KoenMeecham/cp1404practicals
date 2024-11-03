@@ -2,7 +2,7 @@
 CP1402
 guitar
 expected: 30mins
-actual
+actual: 41mins
 """
 CURRENT_YEAR = 2024
 VINTAGE_AGE = 50
