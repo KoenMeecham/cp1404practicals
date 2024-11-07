@@ -3,7 +3,7 @@ CP1404/CP5632 Practical
 File and class example - opens/reads a file, stores in objects of custom class
 (contains multiple versions for demonstration: using csv and namedtuple)
 expected: 15mins
-actual:
+actual: 16mins
 """
 
 import csv
