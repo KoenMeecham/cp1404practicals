@@ -28,8 +28,8 @@ def run_tests():
     ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
     python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
     visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
-
-    languages = [ruby, python, visual_basic]
+    english = ProgrammingLanguage("English", "Dynamic", False, 1991)
+    languages = [ruby, python, visual_basic, english]
     print(python)
 
     print("The dynamically typed languages are:")
