@@ -2,9 +2,9 @@
 CP1402
 project
 estimated: 4 hours
-actual:
+actual: 3.75 hours
 """
-import datetime
+
 class Project:
     """Project class"""
     def __init__(self, name, start_date, priority, cost_estimate, completion_percentage):

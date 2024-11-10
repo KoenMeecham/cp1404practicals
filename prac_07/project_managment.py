@@ -2,7 +2,7 @@
 CP1402
 project managment
 estimated: 4 hours
-actual:
+actual: 3.75 hours
 """
 import datetime
 from prac_07.project import Project
