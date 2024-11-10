@@ -7,7 +7,7 @@ actual:
 
 import csv
 from prac_07.guitar import Guitar
-from collections import namedtuple
+
 
 def main():
     """Program for displaying guitars"""
@@ -32,8 +32,13 @@ def display_guitars(guitars):
         print(guitar)
 
 
-def save_guitars():
+def save_guitars(guitars):
     """Save the guitars to the csv"""
     print("Saving guitars")
+    with open ("guitars.csv", "w") as outfile:
+        csv_writer = csv.writer(outfile)
+        for row in guitars:
+            csv_writer.writerow(row)
 
-main()
+if __name__ == "__main__":
+    main()
