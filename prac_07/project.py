@@ -7,13 +7,13 @@ actual:
 import datetime
 class Project:
     """Project class"""
-    def __init__(self, name, start_date, priority, completion_percentage, cost_estimate):
+    def __init__(self, name, start_date, priority, cost_estimate, completion_percentage):
         """Construct instances of Project class"""
         self.name = name
         self.start_date = start_date
         self.priority = priority
-        self.completion_percentage = completion_percentage
         self.cost_estimate = cost_estimate
+        self.completion_percentage = completion_percentage
 
     def __str__(self):
         """String representation of Project class"""
@@ -34,5 +34,12 @@ class Project:
     def __gt__(self, other):
         """Return true if one date is greater than the other"""
         return self.start_date > other.start_date
+
+    def update(self, new_priority, new_completion_percentage):
+        if new_priority != self.priority:
+            self.priority = new_priority
+        if new_completion_percentage != self.completion_percentage:
+            self.completion_percentage = new_completion_percentage
+
 
 
