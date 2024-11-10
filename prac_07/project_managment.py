@@ -40,6 +40,8 @@ def main():
         else:
             print("Invalid choice")
         choice = input(">>> ").upper()
+
+    print("Have a nice day")
     save_projects(projects)
 
 
@@ -63,6 +65,7 @@ def save_projects(projects):
             out_file.write(f'{project.name}\t{project.start_date}\t{project.priority}\t{project.cost_estimate}\t{project.completion_percentage}\n')
 
 def display_projects(projects):
+    """Display incomplete and complete projects."""
     incomplete_projects = [project for project in projects if not project.is_complete()]
     complete_projects = [project for project in projects if project.is_complete()]
 
@@ -82,9 +85,9 @@ def add_project(projects):
     while name != "":
         date_string = input("Date (d/m/yyyy): ")  # e.g., "30/9/2022"
         start_date = datetime.datetime.strptime(date_string, "%d/%m/%Y").date()
-        priority = input("Priority: ")
+        priority = int(input("Priority: "))
         cost = float(input("Cost: "))
-        completion_percentage = input("Completion Percentage: ")
+        completion_percentage = int(input("Completion Percentage: "))
         add_project = Project(name, start_date, priority, cost, completion_percentage)
         projects.append(add_project)
         name = input("Name: ")
