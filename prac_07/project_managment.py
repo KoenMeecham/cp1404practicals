@@ -60,7 +60,7 @@ def save_projects(projects):
     with open(FILENAME, "w") as out_file:
         out_file.write(f'Name\tStart Date\tPriority\tCost Estimate\tCompletion Percentage\n')
         for project in projects:
-            out_file.write(f'{project.name}\t{project.start_date}\t{project.priority}\t{project.completion_percentage}\t{project.cost_estimate}\n')
+            out_file.write(f'{project.name}\t{project.start_date}\t{project.priority}\t{project.cost_estimate}\t{project.completion_percentage}\n')
 
 def display_projects(projects):
     incomplete_projects = [project for project in projects if not project.is_complete()]
@@ -102,5 +102,12 @@ def filter_projects(projects):
 
 def update_project(projects):
     """Update a project in the projects list, but only the completion and priotity"""
+    project_name = input("Input the name of the project to update: ")
+    for project in projects:
+        if project_name == project.name:
+            new_priority = int(input("Input the new priority: "))
+            new_completion_percentage = int(input("Input the new completion percentage: "))
+            project.update(new_priority, new_completion_percentage)
+
 if __name__ == "__main__":
     main()
