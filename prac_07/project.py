@@ -18,3 +18,5 @@ class Project:
     def __str__(self):
         return f'{self.name} - {self.start_date} - {self.priority} - {self.completion_percentage} - {self.cost_estimate}'
 
+    def __repr__(self):
+        return str(self)
