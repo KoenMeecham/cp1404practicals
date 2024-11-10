@@ -1,4 +1,4 @@
-# CP1404 Practicals
+# CP1404 Practicals README
 
 ## README for practical repository
 
