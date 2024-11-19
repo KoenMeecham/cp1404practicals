@@ -26,9 +26,9 @@ class MilesToKilometresApp(App):
         result = value * M_TO_KM
         self.root.ids.output_label.text = str(result)
 
-    def handle_increment(self, change):
+    def handle_increment(self, increment):
         """Increment up and down"""
-        value = self.get_miles_validated() + change
+        value = self.get_miles_validated() + increment
         self.root.ids.input_miles.text = str(value)
         self.handle_calculation()
 
