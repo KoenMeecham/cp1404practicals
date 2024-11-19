@@ -2,7 +2,7 @@
 CP1404
 Squaring App
 estimated:10mins
-actual:
+actual: 9mins
 """
 
 from kivy.app import App
