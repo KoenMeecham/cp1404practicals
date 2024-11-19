@@ -2,7 +2,7 @@
 CP1404
 convert m to km
 estimate: 15mins
-actual:
+actual: 18mins
 """
 
 from kivy.app import App
