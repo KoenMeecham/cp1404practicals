@@ -11,7 +11,7 @@ class DynamicLabelApp(App):
 
     def build(self):
         """Construct Kivy App"""
-        self.tile = "Creative Name"
+        self.title = "Creative Name"
         self.root = Builder.load_file('dynamic_labels.kv')
         self.construct_labels()
         return self.root
@@ -20,7 +20,7 @@ class DynamicLabelApp(App):
         """Construct Labels"""
         for name in self.names_to_label:
             temp_label = Label(text=name)
-            self.root.ids.main.add_label(temp_label)
+            self.root.ids.main.add_widget(temp_label)
 
 DynamicLabelApp().run()
 
