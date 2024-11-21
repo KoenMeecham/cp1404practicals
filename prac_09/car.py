@@ -1,6 +1,6 @@
 """
 CP1404
-car
+Car class
 """
 class Car:
     """Represent a Car object."""
