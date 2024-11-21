@@ -2,7 +2,7 @@
 CP1404
 Taxi test
 estimated: 8mins
-actual:
+actual: 6mins
 """
 
 from prac_09.taxi import Taxi
