@@ -2,7 +2,7 @@
 CP1404
 unreliable car
 estimated: 10mins
-actual:
+actual: 9mins
 """
 from prac_09.unreliable_car import UnreliableCar
 

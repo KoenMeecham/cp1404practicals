@@ -17,4 +17,5 @@ def main():
     print(taxi_test, taxi_test.get_fare())
 
 
-main()
+if __name__ == "__main__":
+    main()
