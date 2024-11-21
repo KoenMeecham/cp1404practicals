@@ -2,7 +2,7 @@
 CP1404
 Sliver service test
 estimated: 10mins
-actual:
+actual: 13mins
 """
 
 from prac_09.taxi import Taxi
@@ -23,4 +23,4 @@ class SliverServiceTaxi(Taxi):
 
     def get_fare(self):
         """Calculate fare"""
-        return self.flag_fall * self.get_fare()
+        return self.flag_fall + super().get_fare()
