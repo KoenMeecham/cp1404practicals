@@ -2,7 +2,7 @@
 CP1404
 Band class
 estimated: 15mins
-actual: 20mins
+actual: 21mins
 """
 
 class Band:
