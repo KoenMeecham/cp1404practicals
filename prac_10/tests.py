@@ -1,6 +1,8 @@
 """
 CP1404
 Tests
+estimated = 5mins
+actual = 6mins
 """
 
 import doctest
